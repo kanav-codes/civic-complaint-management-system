@@ -1,10 +1,18 @@
+import os
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///complaints.db'
-app.config['SECRET_KEY'] = 'civicai123'
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+app.config["SQLALCHEMY_DATABASE_URI"] = \
+    "sqlite:///" + os.path.join(BASE_DIR, "complaints.db")
+
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "dev-secret-key")
 db = SQLAlchemy(app)
+with app.app_context():
+    db.create_all()
 class Complaint(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -120,5 +128,5 @@ def dashboard():
                           high_priority=high_priority,
                           categories=categories)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
