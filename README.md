@@ -392,9 +392,9 @@ https://civic-complaint-system-ehvf.onrender.com/
 > Add your homepage screenshot here.
 
 
-[screenshots/homepage.png]
-[screenshots/homepage1.png]
-[screenshots/homepage2.png]
+![Home Page](screenshots/homepage.png)
+![Home Page](screenshots1/homepage.png)
+![Home Page](screenshots2/homepage.png)
 
 
 ---
