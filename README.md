@@ -393,6 +393,8 @@ https://civic-complaint-system-ehvf.onrender.com/
 
 ```text
 screenshots/homepage.png
+screenshots/homepage1.png
+screenshots/homepage2.png
 ```
 
 ---
@@ -403,6 +405,7 @@ screenshots/homepage.png
 
 ```text
 screenshots/submission.png
+screenshots/submission1.png
 ```
 
 ---
@@ -413,17 +416,14 @@ screenshots/submission.png
 
 ```text
 screenshots/dashboard.png
+screenshots/dashboard1.png
+screenshots/dashboard2.png
+
 ```
 
 ---
 
-## 📈 Analytics Dashboard
 
-> Add analytics screenshot.
-
-```text
-screenshots/analytics.png
-```
 
 ---
 # 🎯 Skills Demonstrated
