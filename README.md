@@ -240,22 +240,22 @@ python app.py
 
 ## Home Page
 
-
-
-
-
+<img width="1366" height="643" alt="image" src="https://github.com/user-attachments/assets/6bb6456a-8a56-4a40-b87d-035bb114a7e4" />
+<img width="1116" height="267" alt="image" src="https://github.com/user-attachments/assets/2865bcab-ca6e-48ca-8ac2-0ed1c9813940" />
 
 ---
 
 ## Complaint Submission
 
-(Add Screenshot)
+<img width="1118" height="251" alt="image" src="https://github.com/user-attachments/assets/aeeb5744-9a1f-4203-ad0c-d6c0aaf0f830" />
+<img width="1080" height="219" alt="image" src="https://github.com/user-attachments/assets/a16841f5-79db-46f1-a36c-11af04832028" />
 
 ---
 
 ## Dashboard
 
-(Add Screenshot)
+<img width="1365" height="639" alt="image" src="https://github.com/user-attachments/assets/3e3e2d1f-f43a-4c22-a32d-c8b4e1863195" />
+<img width="1366" height="573" alt="image" src="https://github.com/user-attachments/assets/f5efdc6d-c39f-4377-8c8d-2304af572a94" />
 
 ---
 
