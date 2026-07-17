@@ -2,23 +2,13 @@
 
 # 🏙️ Civic Complaint Management System
 
-### Organizing Public Complaints with Smarter Prioritization and Transparent Tracking
+### A centralized web application for reporting, prioritizing, and tracking civic complaints.
 
-A web application built with **Flask** that enables citizens to report civic issues, categorize complaints based on severity, and track their resolution through an intuitive dashboard.
-
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
-![SQLite](https://img.shields.io/badge/Database-SQLite-blue)
-![Render](https://img.shields.io/badge/Deployment-Render-46E3B7?logo=render)
-![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-black?logo=github)
-
----
-
-### 🌐 Live Demo
-Coming Soon
-
-### 📷 Screenshots
-Coming Soon
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)]()
+[![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)]()
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)]()
+[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-red)]()
+[![Render](https://img.shields.io/badge/Hosted%20on-Render-46E3B7?logo=render)]()
 
 </div>
 
@@ -26,137 +16,130 @@ Coming Soon
 
 # 📖 Overview
 
-The Civic Complaint Management System is designed to streamline how public complaints are collected, organized, prioritized, and monitored.
+The Civic Complaint Management System is a full-stack web application that helps organize and manage public infrastructure complaints submitted by citizens.
 
-Instead of relying on scattered communication channels or manual record keeping, the platform provides a centralized dashboard where complaints can be managed efficiently.
+The platform allows users to report civic issues such as road potholes, electricity failures, water leakage, garbage accumulation, damaged streetlights, and other public safety concerns.
 
-The application focuses on improving transparency, reducing response delays, and helping authorities identify which issues require immediate attention.
+Each complaint is automatically categorized and assigned a priority level based on its description. Administrators can monitor complaints through a dashboard and update their status from **Open** to **In Progress** and **Resolved**.
+
+This project demonstrates backend development, relational database design, CRUD operations, and deployment of a production-style Flask application.
 
 ---
 
 # 🚨 Problem Statement
 
-Cities receive hundreds of complaints every day, including:
+Many civic complaints are handled through fragmented communication channels, making it difficult to:
 
-- Road potholes
-- Electricity failures
-- Water leakage
-- Garbage accumulation
-- Damaged streetlights
-- Public safety hazards
+- Prioritize urgent complaints
+- Track complaint progress
+- Monitor resolution status
+- Maintain transparency
+- Organize large volumes of complaints
 
-Without a structured system, complaints may:
-
-- Be overlooked
-- Be duplicated
-- Receive delayed responses
-- Lack visibility for both citizens and administrators
+Without a centralized system, response times increase and complaint management becomes inefficient.
 
 ---
 
 # 💡 Solution
 
-The application provides a centralized complaint management platform that enables:
+This application provides a centralized complaint management platform where:
 
-- Citizens to submit complaints
-- Categorization of complaint types
-- Severity-based prioritization
-- Complaint status tracking
-- Dashboard for monitoring pending and resolved issues
-
-This helps authorities allocate resources more effectively while improving accountability.
+- Citizens can submit complaints.
+- Complaints are automatically categorized.
+- Priority levels are assigned based on complaint severity.
+- Authorities can track complaint status.
+- Dashboard provides an overview of complaint statistics.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
 ## Citizen Portal
 
-- Submit civic complaints
-- Select complaint category
-- Describe the issue
-- Track complaint status
+- Register civic complaints
+- Location-based complaint submission
+- Automatic complaint categorization
+- Automatic priority assignment
 
 ---
 
-## Complaint Categorization
-
-Supported complaint categories include:
+## Complaint Categories
 
 - 🛣 Road & Potholes
 - ⚡ Electricity
 - 🚰 Water Supply
-- 🗑 Waste Management
+- 🗑 Garbage
 - 💡 Street Lights
 - 🚨 Public Safety
-- 🌳 Other Civic Issues
+- 📌 Other
 
 ---
 
-## Severity Management
+## Priority Levels
 
-Complaints can be categorized based on urgency:
-
-| Severity | Description |
-|-----------|-------------|
-| 🟢 Low | Minor inconvenience |
-| 🟡 Medium | Needs timely attention |
-| 🔴 High | Immediate action required |
+- 🔴 High
+- 🟡 Medium
+- 🟢 Low
 
 ---
 
 ## Dashboard
 
-The dashboard provides insights including:
-
-- Total complaints
-- Pending complaints
-- Resolved complaints
-- Complaint categories
-- Severity overview
+- Total Complaints
+- Open Complaints
+- Complaints In Progress
+- Resolved Complaints
+- High Priority Complaint Count
+- Category-wise Complaint Distribution
 
 ---
 
-# 🏗 Project Workflow
+# 🏗 Workflow
 
 ```text
 Citizen
 
-     │
+    │
 
-     ▼
+    ▼
 
 Submit Complaint
 
-     │
+    │
 
-     ▼
+    ▼
 
-Store Complaint
+Automatic Category Detection
 
-     │
+    │
 
-     ▼
+    ▼
 
-Categorize Complaint
+Priority Assignment
 
-     │
+    │
 
-     ▼
+    ▼
 
-Assign Severity
+Store in PostgreSQL Database
 
-     │
+    │
 
-     ▼
+    ▼
 
 Dashboard
 
-     │
+    │
 
-     ▼
+    ▼
 
-Pending / Resolved Tracking
+Status Update
+
+    │
+
+    ▼
+
+Resolved
 ```
 
 ---
@@ -165,13 +148,14 @@ Pending / Resolved Tracking
 
 | Category | Technology |
 |-----------|------------|
-| Language | Python |
 | Backend | Flask |
+| Language | Python |
+| Database | PostgreSQL |
+| ORM | SQLAlchemy |
 | Frontend | HTML5, CSS3 |
 | Templates | Jinja2 |
-| Database | SQLite |
-| Version Control | Git |
-| Hosting | Render |
+| Version Control | Git & GitHub |
+| Deployment | Render |
 
 ---
 
@@ -182,10 +166,9 @@ Pending / Resolved Tracking
 ├── app.py
 ├── templates/
 ├── static/
-├── instance/
 ├── requirements.txt
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -195,28 +178,32 @@ Pending / Resolved Tracking
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/your-username/repository.git
 ```
 
-Navigate to the project
+Move into the project
 
 ```bash
-cd repository-name
+cd repository
 ```
 
 Create a virtual environment
 
+```bash
+python -m venv env
+```
+
+Activate virtual environment
+
 Windows
 
 ```bash
-python -m venv env
 env\Scripts\activate
 ```
 
-Linux/macOS
+Linux / macOS
 
 ```bash
-python3 -m venv env
 source env/bin/activate
 ```
 
@@ -226,17 +213,26 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+Configure environment variables
+
+```
+DATABASE_URL=your_database_url
+SECRET_KEY=your_secret_key
+```
+
 Run the application
 
 ```bash
 python app.py
 ```
 
-Open
+---
 
-```
-http://127.0.0.1:5000
-```
+# 🌐 Live Demo
+
+**Live Application**
+
+👉 [(https://civic-complaint-system-ehvf.onrender.com/)]
 
 ---
 
@@ -244,64 +240,52 @@ http://127.0.0.1:5000
 
 ## Home Page
 
-_Add Screenshot_
+
+
+
+
 
 ---
 
-## Complaint Form
+## Complaint Submission
 
-_Add Screenshot_
+(Add Screenshot)
 
 ---
 
 ## Dashboard
 
-_Add Screenshot_
-
----
-
-# 🚀 Future Enhancements
-
-- User Authentication
-- Admin Panel
-- Complaint Search & Filtering
-- Email Notifications
-- SMS Alerts
-- Image Upload Support
-- GPS-Based Complaint Location
-- Interactive Maps
-- Analytics Dashboard
-- AI-Based Complaint Severity Prediction
-- Machine Learning for Complaint Classification
-- REST API Support
+(Add Screenshot)
 
 ---
 
 # 🎯 Skills Demonstrated
 
-- Backend Development using Flask
-- Python Programming
-- SQLite Database Integration
+- Flask Application Development
+- PostgreSQL Integration
+- SQLAlchemy ORM
 - CRUD Operations
-- Web Forms
-- Template Rendering with Jinja2
-- Dashboard Design
-- Project Structuring
-- Version Control with Git
-- Deployment using Render
+- Backend Routing
+- Relational Database Design
+- Template Rendering
+- Dashboard Development
+- Cloud Deployment
+- Git Version Control
 
 ---
 
-# 📚 Learning Outcomes
+# 🚀 Future Improvements
 
-Through this project I gained hands-on experience with:
-
-- Designing a complete Flask application
-- Managing application routes
-- Handling user input securely
-- Working with relational databases
-- Organizing projects using a scalable folder structure
-- Deploying production-ready web applications
+- User Authentication
+- Admin Panel
+- Complaint Search & Filters
+- Complaint Image Upload
+- Email Notifications
+- Interactive Maps
+- Analytics Dashboard
+- REST API
+- AI-based Complaint Classification
+- Machine Learning-based Severity Prediction
 
 ---
 
@@ -313,14 +297,19 @@ B.Tech Computer Science (AI & ML)
 
 Vivekananda Institute of Professional Studies (GGSIPU)
 
----
+GitHub: https://github.com/kanav-codes
 
-# ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
+LinkedIn: https://linkedin.com/in/kanav-bansal24
 ---
 
 # 📄 License
 
-This project is intended for educational, learning, and portfolio purposes.
+This project is intended for educational and portfolio purposes.
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a Star.
+
+</div>
