@@ -391,11 +391,11 @@ https://civic-complaint-system-ehvf.onrender.com/
 
 > Add your homepage screenshot here.
 
-```text
+
 screenshots/homepage.png
 screenshots/homepage1.png
 screenshots/homepage2.png
-```
+
 
 ---
 
@@ -403,10 +403,10 @@ screenshots/homepage2.png
 
 > Add complaint submission screenshot.
 
-```text
+
 screenshots/submission.png
 screenshots/submission1.png
-```
+
 
 ---
 
@@ -414,12 +414,12 @@ screenshots/submission1.png
 
 > Add dashboard screenshot.
 
-```text
+
 screenshots/dashboard.png
 screenshots/dashboard1.png
 screenshots/dashboard2.png
 
-```
+
 
 ---
 
