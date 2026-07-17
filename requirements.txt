@@ -3,12 +3,14 @@ colorama==0.4.4
 distlib==0.4.3
 filelock==3.29.4
 Flask==2.0.2
+gunicorn==26.0.0
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
 mysql==0.0.3
 mysql-connector-python==9.0.0
 mysqlclient==2.2.4
+packaging==26.2
 platformdirs==4.10.0
 PyMySQL==1.1.1
 python-discovery==1.4.2
