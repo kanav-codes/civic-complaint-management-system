@@ -3,11 +3,8 @@ from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 app = Flask(__name__)
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-
-app.config["SQLALCHEMY_DATABASE_URI"] = \
-    "sqlite:///" + os.path.join(BASE_DIR, "complaints.db")
-
+DATABASE_URL = os.environ.get("DATABASE_URL")
+app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "dev-secret-key")
 db = SQLAlchemy(app)

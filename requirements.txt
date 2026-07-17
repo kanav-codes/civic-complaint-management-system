@@ -12,6 +12,7 @@ mysql-connector-python==9.0.0
 mysqlclient==2.2.4
 packaging==26.2
 platformdirs==4.10.0
+psycopg2-binary==2.9.12
 PyMySQL==1.1.1
 python-discovery==1.4.2
 SpeechRecognition==3.8.1
