@@ -392,9 +392,11 @@ https://civic-complaint-system-ehvf.onrender.com/
 > Add your homepage screenshot here.
 
 
-![Home Page](screenshots/homepage.png)
-![Home Page](screenshots1/homepage.png)
-![Home Page](screenshots2/homepage.png)
+![Home Page](screenshots/homepage.PNG)
+
+![Home Page](screenshots1/homepage.PNG)
+
+![Home Page](screenshots2/homepage.PNG)
 
 
 ---
@@ -404,8 +406,9 @@ https://civic-complaint-system-ehvf.onrender.com/
 > Add complaint submission screenshot.
 
 
-[screenshots/submission.png]
-[screenshots/submission1.png]
+![Complaint Submission](screenshots/submission.PNG)
+
+![Complaint Submission](screenshots/submission1.PNG)
 
 
 ---
@@ -415,9 +418,11 @@ https://civic-complaint-system-ehvf.onrender.com/
 > Add dashboard screenshot.
 
 
-[screenshots/dashboard.png]
-[screenshots/dashboard1.png]
-[screenshots/dashboard2.png]
+![Dashboard](screenshots/dashboard.PNG)
+
+![Dashboard](screenshots/dashboard1.PNG)
+
+![Dashboard](screenshots/dashboard.PNG)
 
 
 
